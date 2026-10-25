@@ -13,6 +13,7 @@ void SPI_Delay(unsigned char xrate);
 //EPD
 
 void Epaper_READBUSY(void);
+bool WaitBusyTimeout(unsigned long timeoutMs);
 void SPI_Write(unsigned char value);
 void Epaper_Write_Command(unsigned char cmd);
 void Epaper_Write_Data(unsigned char datas);
